@@ -1,0 +1,17 @@
+steps 
+
+1.Go to Firebase and create a project 
+2.installing firebase to local repo and add a firebase init page(do not publish the init page anywhere! DANGEROUS)
+3.React Router Setup dilam
+4.Whole react page dekhte kemon hobe setar layout ekta alada page e set korbo - Main.jsx (layout folder)
+5.Page er initial jinish Header,tai Header er kaj start korlam.Component folder e Header page e Header banailam and Main.jsx e link up kore dilam
+6.Amra jei layout banaisi setai jeno show kore tai react router e amader layout link up kore dilam
+7.ekta login page banailam and route e set kore dilam, pashe header e koekta link set kore dilam jate tip dilei oi page e niye jay
+8.login page e firebase_init er app auth e anlam 
+9.Google auth provider import korlam ( Login.jsx)
+10.Use signInWithPopUp and pass auth and provider ( Login.jsx)
+11.Activate Sign in method in Firebase project - simple firebase (build->authentication->give email)
+12.complete handleGoogleSignIn function code ( Login.jsx)
+13.User jodi authenticate kore taile or kichu information show korlam ( Login.jsx)
+14.Sign out set korlam ( login.jsx)
+15.Signout and login button ke dynamic korlam

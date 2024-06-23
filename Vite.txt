@@ -1,0 +1,67 @@
+npm create vite@latest my-vue-app -- --template vue
+
+"dev": "vite --port 3000",
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+tailwind.config.js:
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+index.css:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+control+space = tailwind e style suggestion
+
+<html lang="en" data-theme="light">
+index.css,app.css er sob code remove
+
+Daisy ui:
+npm i -D daisyui@latest
+tailwind.config.js:
+plugins: [require("daisyui")],
+eslintsc.js:
+env:node:true,
+
+React-icons:
+npm install react-icons --save
+import { FaBeer } from 'react-icons/fa';
+
+react recharts:
+  $ npm install recharts
+
+npm i react-router-dom
+import { RouterProvider } from 'react-router-dom';
+
+
+Firebase:
+npm install firebase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
