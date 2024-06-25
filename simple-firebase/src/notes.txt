@@ -15,3 +15,5 @@ steps
 13.User jodi authenticate kore taile or kichu information show korlam ( Login.jsx)
 14.Sign out set korlam ( login.jsx)
 15.Signout and login button ke dynamic korlam
+16.Github authentication start ->
+        github er settings e giye new app banailam & client id ,secret collect korbo 
