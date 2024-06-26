@@ -5,3 +5,21 @@
 5.Daisy ui theke header copy kore ene Header.jsx e boshailam, html code dynamic korlam ,Navlink use korlam && Root.jsx e outlet er upore header boshailam
 6.Register.jsx e form banailam (Register.jsx)
 7.HeroRegister name e page khullam,daisy theke login page bosaisi ,route and header e set kore dilam
+8.Email,pass authentication er start -> firebase e new project ,email,password select,settings e giye new firebase app banailam
+9.ebar firebase use korte hobe -> firebase->build->authentication->web->get started er auth codes amar code e boshaite hobe,auth export o korlam
+10.eibar user theke email,password niye NewUser banabo (createUserWithEmailAndPassword)
+11.Error ,success show er jonne useState e rakhlam,dynamically form er pore error show er code dilam, and pore upore abar setReError ke null banay dilam
+12.password length <6 hoile ekta condition set kore dilam
+
+
+
+
+
+
+
+
+
+
+
+
+

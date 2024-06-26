@@ -1,13 +1,11 @@
-import React from 'react';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import React, { useState } from 'react';
+import auth from '../../firebase/Firebase.config';
 
 const Register = () => {
 
-    const handleRegister=e=>{
-        e.preventDefault();
-        const email=e.target.email.value;
-        const password=e.target.password.value;
-        console.log(email,password);
-    }
+    
+    
     return (
       <div className=" border">
         <div className="mx-auto">
