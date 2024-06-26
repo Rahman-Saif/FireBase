@@ -1,0 +1,7 @@
+1.React,tailwind,daisy,router,firebase set up dilam
+2.Components->root->Root.jsx banailam (etai layout er kaj korbe) and seta router e set korlam (Root.jsx,main.jsx)
+3.Router er children set korlam
+** login== sign in, register == signup
+5.Daisy ui theke header copy kore ene Header.jsx e boshailam, html code dynamic korlam ,Navlink use korlam && Root.jsx e outlet er upore header boshailam
+6.Register.jsx e form banailam (Register.jsx)
+7.HeroRegister name e page khullam,daisy theke login page bosaisi ,route and header e set kore dilam
