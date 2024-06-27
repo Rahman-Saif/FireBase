@@ -10,7 +10,13 @@
 10.eibar user theke email,password niye NewUser banabo (createUserWithEmailAndPassword)
 11.Error ,success show er jonne useState e rakhlam,dynamically form er pore error show er code dilam, and pore upore abar setReError ke null banay dilam
 12.password length <6 hoile ekta condition set kore dilam
-
+13.Regular expression use kore password er ekta condition set korlam
+14.usestate and input field dynamic kore password show/hide korlam
+15.Terms and conditions o ager moto conditional kore dilam
+16.Ebar login page e login er kaj start kortesi,tai firebase theke sign in er code antesi
+17.Register er motoi login er kaj gula copy paste korlam
+18.New to this website/create account esob link tag banailam
+19.Email settings er kaj korlam
 
 
 

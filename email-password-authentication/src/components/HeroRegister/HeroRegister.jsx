@@ -1,22 +1,36 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import React, { useState } from "react";
 import auth from "../../firebase/Firebase.config";
+import { Link } from "react-router-dom";
 
 
 const HeroRegister = () => {
 
         const [registerError, setRegisterError] = useState("");
         const [success,setSuccess]=useState('');
-
+        const [showpassword,setshowPassword]=useState(false);
+        
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    const accepted = e.target.terms.checked;
+
+    console.log(email, password,accepted);
 
     if(password.length <6){
         setRegisterError('Password should be at least 6 characters long!');
+    }else if(!/[A-Z]/.test(password)){
+      setRegisterError('Your password should contain word more than 6 characters!');
+      return;
     }
+    else if(!accepted){
+      setRegisterError('Please accept our terms and conditions!');
+      return;
+    }
+
+
+   
     
     setRegisterError('');
     setSuccess('');
@@ -25,6 +39,11 @@ const HeroRegister = () => {
       .then((result) => {
         console.log(result.user);
         setSuccess('user created successfully');
+
+        sendEmailVerification(result.user)
+        .then(()=>{
+          alert(`Please check your email and verify!`);
+        })
       })
       .catch((error) => {
         console.log(error);
@@ -62,28 +81,38 @@ const HeroRegister = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="password"
+                type={showpassword ? "text" : "password"}
                 name="password"
                 placeholder="password"
                 className="input input-bordered"
                 required
               />
+              <button onClick={() => setshowPassword(!showpassword)}>
+                {" "}
+                Show
+              </button>
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
                   Forgot password?
                 </a>
               </label>
             </div>
+            <br></br>
+            <div className="mb-2">
+              <input type="checkbox" name="terms" id="terms" />
+              <label htmlFor="terms" className="ml-2">
+                Accept out <a href="">Terms and Conditions!</a>
+              </label>
+            </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
-          {
-            registerError && <p className="text-red-700">{registerError}</p>
-          }
-          {
-            success && <p className="text-green-700">{success}</p>
-          }
+          {registerError && <p className="text-red-700">{registerError}</p>}
+          {success && <p className="text-green-700">{success}</p>}
+          <p>
+            Already Have an Account? <Link to="/login">Login</Link>
+          </p>
         </div>
       </div>
     </div>
