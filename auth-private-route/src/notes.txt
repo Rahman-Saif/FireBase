@@ -1,0 +1,53 @@
+1.all the things set up disi
+2.Firebase e email-authentication ON kore dei 
+3.Root ke layout hisebe dhortesi , and sobgula route set up dilam home,login,register.jsx diye
+4.Login,register page set up dilam
+5.context create korlam (AuthProvider.jsx)
+6.
+7.SignInUser ke use korlam and signInWithEmailAndPassword() ke return kore dilam
+then signInUser ke authInfo te parameter hisebe pathay dilam,jehetu authInfo useContext er value hisebe store kortesi
+tai LoginPage theke useContext ke import korlei authinfo peye jabo
+8.useContext diye authInfo import->signinUser korlam 
+9.useEffect use kore onAuthStateChange use korlam
+10.signout er kaj korbo,useContext use kore Navbar e user ke import korlam
+11.AuthProvider logout function e signout function ke import korlam and handleSignout function diye Signout function ke call korlam & sobar last
+e signout button boshay kaj korlam
+12.Orders er ekta page khullam etake privateroute hisebe set korbo
+13.PrivateRoute.jsx name e file khullam,then main.jsx e route e <privateRoute><Orders> eivabe sequential vabe boshailam
+14.loader use korbo,tai khub simply ekta state declare kore rakhlam and jeikhane loading boshaite chai seigula value true kore dilam,
+tarpor PrivateRoute e condition boshay ekta loader boshay dilam jeno loading boshe jay
+15.login e signInUser er por useNavigate use kore direct home page e send kore dicchi, then jodi khali user logged in thake tailei
+kichu route dekhabe navbar e tai Navbar e fragment ke conditional kore dicchi 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
