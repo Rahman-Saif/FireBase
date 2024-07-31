@@ -1,0 +1,6 @@
+1.Figma file er first ei font dekhbo konta ki ? then font style setup dibo ( index.css e paste korbo )
+2.Jodi specific kono font-style add kora lage taile tailwind.config.js e customise korbo!
+3.Amar whole device er width koto tuk? oituk width Root.jsx e giye sobgular jonnei same width set up kore dei
+4.shared components gula check korbo & jehetu sobar font same tai jei Root.jsx e font-poppins boshay dibo
+5.Layout check korbo je kemon,tarpor home page design start
+

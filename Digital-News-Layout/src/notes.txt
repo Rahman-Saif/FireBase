@@ -1,0 +1,5 @@
+1.React JS,firebase,react dom,tailwind,daisy ui setup
+2.Firebase email,gmail setup & authentication key in firebase.config.JS
+3.Routes.jsx e project er sob route gula setup dibo 
+4.Root.jsx e display structure kemon hobe segula setup dibo
+5.Main.jsx theke routes ke RouterProvider diye connect kore dilam

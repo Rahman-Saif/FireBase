@@ -60,6 +60,15 @@ import { RouterProvider } from 'react-router-dom';
 Firebase:
 npm install firebase
 
+Node-Express-Mongo:
+npm init 
+or
+npm init -y
+npm install express 
+npm i cors
+npm install -g nodemon
+nodemon index.js
+
 
 
 
